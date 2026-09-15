@@ -1,0 +1,866 @@
+# Burger Landing Page Design System
+
+## Brand Direction
+
+The landing page uses a **Bold Modern Diner** visual style combining contemporary food photography, playful typography, and retro fast-food influences.
+
+The experience should feel:
+
+* Appetizing
+* Energetic
+* Friendly
+* Bold
+* Modern
+* Slightly playful
+* Premium without feeling expensive
+
+The burger itself must remain the strongest visual element on the page.
+
+Avoid overly corporate layouts, excessive gradients, glassmorphism, or generic SaaS-style cards.
+
+---
+
+## Color Palette
+
+### Primary
+
+```css
+--color-primary: #e6392f;
+--color-primary-hover: #c92f27;
+--color-on-primary: #ffffff;
+```
+
+Ketchup-inspired red used for:
+
+* Primary CTA
+* Promotional badges
+* Important highlights
+* Active states
+
+### Secondary
+
+```css
+--color-secondary: #f4b942;
+--color-secondary-hover: #dfa62e;
+--color-on-secondary: #1f1a17;
+```
+
+Mustard yellow used for:
+
+* Secondary CTA
+* Price highlights
+* Decorative shapes
+* Promotional sections
+
+### Background
+
+```css
+--color-background: #fff8ed;
+--color-surface: #ffffff;
+--color-surface-secondary: #f7ead8;
+```
+
+Use warm cream instead of pure white to create a warmer food-oriented experience.
+
+### Text
+
+```css
+--color-text-primary: #211915;
+--color-text-secondary: #74665e;
+--color-text-muted: #9a8b82;
+```
+
+### Accent
+
+```css
+--color-accent-green: #49794a;
+--color-accent-orange: #f07832;
+```
+
+Green can be used for:
+
+* Fresh ingredients
+* Vegetarian labels
+* Natural ingredients
+
+Orange can be used for promotional decorations and spicy menu items.
+
+---
+
+# Typography
+
+Use typography with strong personality.
+
+## Display Font
+
+Recommended:
+
+**Bebas Neue**
+
+Alternative:
+
+* Anton
+* Oswald
+* Archivo Black
+
+Use for:
+
+* Hero headlines
+* Section titles
+* Promotional text
+
+Example:
+
+```css
+font-family: "Bebas Neue", sans-serif;
+```
+
+Hero headline:
+
+```text
+72px desktop
+48px tablet
+40px mobile
+```
+
+Example:
+
+> BIG BURGER.
+> BIGGER FLAVOR.
+
+---
+
+## Body Font
+
+Use:
+
+**Inter**
+
+```css
+font-family: "Inter", sans-serif;
+```
+
+Body text:
+
+```text
+16–18px
+line-height: 1.6
+```
+
+Navigation:
+
+```text
+14–16px
+font-weight: 600
+```
+
+---
+
+# Shape Language
+
+Use moderately rounded shapes.
+
+```css
+--radius-sm: 8px;
+--radius-md: 12px;
+--radius-lg: 20px;
+--radius-xl: 28px;
+--radius-full: 9999px;
+```
+
+Buttons:
+
+```text
+12px radius
+```
+
+Menu cards:
+
+```text
+20–24px radius
+```
+
+Promotional badges:
+
+```text
+9999px radius
+```
+
+Avoid making every element pill-shaped.
+
+---
+
+# Layout
+
+Maximum content width:
+
+```text
+1200–1280px
+```
+
+Desktop horizontal padding:
+
+```text
+32–48px
+```
+
+Mobile horizontal padding:
+
+```text
+20px
+```
+
+Use generous spacing.
+
+Section spacing:
+
+```text
+Desktop: 96–120px
+Mobile: 64–80px
+```
+
+---
+
+# Navigation
+
+Desktop navbar:
+
+```text
+Logo
+
+Home
+Menu
+About
+Reviews
+Contact
+
+[Order Now]
+```
+
+Design:
+
+* Transparent or cream background
+* Sticky navigation
+* Minimal shadow after scrolling
+* Red primary CTA
+
+Example:
+
+```text
+BURGR.
+
+Home   Menu   About   Reviews   Contact
+
+                     Order Now
+```
+
+Mobile:
+
+Use hamburger navigation.
+
+---
+
+# Hero Section
+
+The hero should immediately communicate the product.
+
+Desktop layout:
+
+```text
+-----------------------------------------
+
+Headline                 Burger Image
+
+Description              Floating badge
+
+[Order Now]
+[See Menu]
+
+-----------------------------------------
+```
+
+Example content:
+
+```text
+THE BURGER
+YOU'VE BEEN
+CRAVING.
+
+Juicy beef, melted cheese,
+fresh vegetables, and our
+signature homemade sauce.
+
+[Order Now] [Explore Menu]
+```
+
+Burger image should occupy approximately:
+
+```text
+45–55% of hero width
+```
+
+Use:
+
+* Large burger photography
+* Soft shadow underneath
+* Slight rotation
+* Floating ingredients
+* Minimal decorative illustrations
+
+Optional floating elements:
+
+```text
+Tomato
+Cheese
+Lettuce
+Chili
+Sesame
+```
+
+Do not overcrowd the hero.
+
+---
+
+# Promotional Badge
+
+Place near burger image.
+
+Example:
+
+```text
+BEST
+SELLER
+
+Rp 39K
+```
+
+Use yellow background with dark text.
+
+Shape:
+
+```text
+Circle
+or
+rounded sticker
+```
+
+Slight rotation is encouraged:
+
+```text
+rotate: -8deg
+```
+
+---
+
+# Popular Menu Section
+
+Section title:
+
+```text
+OUR FAVORITES
+```
+
+Subtitle:
+
+```text
+The burgers everyone keeps coming back for.
+```
+
+Desktop:
+
+```text
+3–4 cards per row
+```
+
+Mobile:
+
+```text
+horizontal scroll
+or
+single column
+```
+
+Burger card:
+
+```text
+Burger Image
+
+Classic Smash Burger
+
+Double beef patty,
+cheddar and signature sauce.
+
+Rp 39.000
+
+[Add to Order]
+```
+
+Card design:
+
+```css
+background: #ffffff;
+border-radius: 24px;
+```
+
+Use subtle border instead of strong shadow.
+
+```css
+border: 1px solid #eee2d4;
+```
+
+On hover:
+
+```text
+Image slightly scales
+Card moves upward 4px
+```
+
+---
+
+# Burger Card Image
+
+Burger images should:
+
+* Have transparent or simple backgrounds
+* Be centered
+* Occupy 60–70% card width
+* Have consistent photography style
+
+Avoid random stock photography styles between products.
+
+---
+
+# Category Filter
+
+Above menu grid:
+
+```text
+All
+Beef
+Chicken
+Cheese
+Spicy
+Sides
+Drinks
+```
+
+Design:
+
+Inactive:
+
+```text
+Cream background
+Dark text
+```
+
+Active:
+
+```text
+Red background
+White text
+```
+
+Use rounded pill buttons.
+
+---
+
+# Promo Section
+
+Create one visually strong promotional banner.
+
+Example:
+
+```text
+DOUBLE THE BEEF
+DOUBLE THE HAPPINESS
+
+Get 20% off every Double
+Smash Burger this weekend.
+
+[Order Now]
+```
+
+Layout:
+
+```text
+Red background
+Yellow decorative elements
+Large burger image
+White headline
+```
+
+The section can intentionally break away from the otherwise cream background.
+
+---
+
+# Why Choose Us
+
+Use three features.
+
+```text
+Fresh Ingredients
+
+100% Freshly prepared
+ingredients every day.
+```
+
+```text
+Premium Beef
+
+Selected beef with
+rich flavor and texture.
+```
+
+```text
+Fast Delivery
+
+Hot burgers delivered
+straight to your door.
+```
+
+Use simple line icons.
+
+Avoid complex illustrations.
+
+---
+
+# About Section
+
+Two-column composition.
+
+```text
+Restaurant / Kitchen Image
+
+                        MADE FRESH
+                        EVERY DAY.
+
+                        Short story about
+                        ingredients and preparation.
+
+                        [Our Story]
+```
+
+Use slightly overlapping decorative shapes to create personality.
+
+---
+
+# Testimonials
+
+Title:
+
+```text
+PEOPLE LOVE OUR BURGERS
+```
+
+Cards contain:
+
+```text
+★★★★★
+
+"The beef was incredibly juicy
+and the sauce was amazing."
+
+— Amanda
+```
+
+Use maximum:
+
+```text
+3 testimonials
+```
+
+Avoid large testimonial carousels.
+
+---
+
+# CTA Section
+
+Near the bottom:
+
+```text
+HUNGRY YET?
+
+Your favorite burger is only
+a few clicks away.
+
+[ORDER NOW]
+```
+
+Use bold red or yellow background.
+
+Headline should be oversized.
+
+---
+
+# Footer
+
+Footer background:
+
+```css
+#211915
+```
+
+Text:
+
+```css
+#fff8ed
+```
+
+Layout:
+
+```text
+BURGR.
+
+Fresh burgers.
+Made with love.
+
+Menu
+About
+Contact
+Instagram
+
+© 2026 BURGR.
+```
+
+---
+
+# Buttons
+
+## Primary
+
+```css
+background: #e6392f;
+color: #ffffff;
+height: 52px;
+padding: 0 24px;
+border-radius: 12px;
+font-weight: 700;
+```
+
+Hover:
+
+```css
+background: #c92f27;
+transform: translateY(-2px);
+```
+
+---
+
+## Secondary
+
+```css
+background: transparent;
+border: 2px solid #211915;
+color: #211915;
+```
+
+Hover:
+
+```css
+background: #211915;
+color: #ffffff;
+```
+
+---
+
+# Icon Style
+
+Use outline icons.
+
+Recommended size:
+
+```text
+20–24px
+```
+
+Stroke:
+
+```text
+1.75–2px
+```
+
+Keep icons minimal and consistent.
+
+Suitable icon categories:
+
+* Shopping bag
+* Arrow right
+* Star
+* Location
+* Clock
+* Flame
+* Leaf
+* Instagram
+
+---
+
+# Imagery
+
+Photography should be:
+
+* High contrast
+* Warm
+* Bright
+* Sharp
+* Appetizing
+
+Burger images should emphasize:
+
+* Melted cheese
+* Juicy beef
+* Crispy texture
+* Fresh lettuce
+* Sauce
+
+Avoid overly perfect AI-looking food imagery.
+
+Prefer natural imperfections.
+
+---
+
+# Decorative Elements
+
+Allowed:
+
+```text
+Hand-drawn arrows
+Stars
+Small circles
+Food ingredient illustrations
+Sticker labels
+Simple checker patterns
+```
+
+Use sparingly.
+
+Do not use:
+
+```text
+Heavy gradients
+Glass cards
+Neon effects
+Huge drop shadows
+Complex 3D shapes
+```
+
+---
+
+# Animation
+
+Animations should be playful but subtle.
+
+Hero burger:
+
+```text
+fade + translate upward
+```
+
+Menu cards:
+
+```text
+hover translateY(-4px)
+```
+
+CTA:
+
+```text
+small scale feedback
+```
+
+Floating ingredients:
+
+```text
+slow vertical floating animation
+```
+
+Duration:
+
+```text
+200–500ms UI transitions
+```
+
+Avoid aggressive scroll animations.
+
+---
+
+# Responsive Design
+
+## Mobile
+
+Hero:
+
+```text
+Headline
+Description
+CTA
+Burger image
+```
+
+instead of desktop side-by-side layout.
+
+Hero title:
+
+```text
+40px
+```
+
+Menu:
+
+```text
+1 card per row
+or
+horizontal carousel
+```
+
+CTA buttons:
+
+```text
+full width
+```
+
+Navigation converts into hamburger menu.
+
+---
+
+# Accessibility
+
+Minimum touch target:
+
+```text
+44–48px
+```
+
+Maintain readable text contrast.
+
+Never communicate:
+
+```text
+Spicy
+Vegetarian
+Discount
+Availability
+```
+
+using color alone.
+
+Provide text labels or icons as well.
+
+---
+
+# Overall Visual Rule
+
+The visual hierarchy should always be:
+
+```text
+Burger
+↓
+Headline
+↓
+Price / Promotion
+↓
+CTA
+↓
+Supporting content
+```
+
+The landing page should make visitors feel hungry before making them think about the interface itself.
